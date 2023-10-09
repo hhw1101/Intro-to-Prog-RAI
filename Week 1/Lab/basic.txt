@@ -1,0 +1,19 @@
+#include <stdlib.h> // standard Library
+
+int main(){
+    /*
+    Main function
+    */
+}
+    char c; // character data type
+    int i; // integer data type
+    float f; // floating point data type
+
+##Conversion Characters for printf and scanf
+%d //used for int variables
+%f // float variables
+%c // char variables
+%s // string variables
+
+printf("%d roses cost %2f per %d/n", 24, 19.95, 12); --> 24 roses, cost 19.95 per 12
+
