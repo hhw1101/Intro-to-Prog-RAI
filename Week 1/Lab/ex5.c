@@ -21,5 +21,5 @@ int main(){
     puts("Enter Student's grade:");
     grade = getche();
 
-    printf("\n%s is %i. %s currently has a GPA of %3f and a grade of %c", name, age, name, GPA, grade );
+    printf("\n%s is %i. %s currently has a GPA of %.2f and a grade of %c", name, age, name, GPA, grade );
 }
