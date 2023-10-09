@@ -9,17 +9,18 @@ Print the result with a floating point precision of 2 (display only 2 decimal pl
 
 int main()
 {
-    float a, b, avg;
+    int a, b;
+    float  avg;
 
     puts("Enter a number:");
-    scanf("%f", &a);
+    scanf("%d", &a);
 
     puts("Enter a number:");
-    scanf("%f", &b);
+    scanf("%d", &b);
 
     avg = 0.5 * (a+b);
 
-    printf("The average of %.2f and %.2f is %.2f", a,b,avg);
+    printf("The average of %d and %d is %.2f", a,b,avg);
     // %2f is 2 decimal place rounding
     //%.2f is print only 2 decimal places - no rounding
 
