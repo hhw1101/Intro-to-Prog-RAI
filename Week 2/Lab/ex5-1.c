@@ -19,8 +19,8 @@ int main()
     int b_pre = ++b;
     int e_post = e--;
 
-    printf("new variables a: %d.\n", a_post);
-    printf("new variables b: %d.\n", b_pre);
+    printf("new variables a : %d.\n", a_post);
+    printf("new variables b : %d.\n", b_pre);
     printf("new variables e : %d.\n", e_post);
     // I can't do math
 
