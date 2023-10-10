@@ -10,7 +10,7 @@ int main()
 
     int value, sum;
     char c, c_sum;
-    
+
     puts("Enter a letter: ");
     c = getchar();
     // When enter a letter is later does not take a letter
