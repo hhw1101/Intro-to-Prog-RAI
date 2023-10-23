@@ -94,6 +94,31 @@ To use functions there are 3 main aspects:
 * **Implementation** - the body of the function/implementing the function
 * **Function Calling** - using the function
 
+There are two ways of declaring a function. The function must be __declared__ before being called, however the function does not need to be defined before the main.
+
+Example:
+```
+#include <stdio.h>
+
+int newFunction1(); // This is declaring the function
+
+int newFunction2(int var){
+    //Define Function
+}// This is declaring and defining a function.  This function will work
+
+int main(){
+ //Code
+}
+
+int newFunction1(){
+    //Define function
+} This function will now run as it has been declared above and defined here.
+
+int newFunction3(){
+    // This function will not run, as the declaration is after the main function.
+}
+```
+
 ### Recursion
 
 This is when a function calls itself to solve a smaller instance of the same problem. This breaks down a problem into simpler subproblems.
