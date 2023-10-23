@@ -4,7 +4,7 @@
 
 int main()
 {
-    srand(time(0)); // This randomises rand, otherwise rand will give the same value each game.
+    srand(time(NULL)); // This randomises rand, otherwise rand will give the same value each game.
     int num = rand() % 100 + 1;
     int guess = 0, turns = 1;
     printf("Welcome to the Guess the Number game!\nI've selected a random number between 1 and 100.\nCan you guess what it is?\n");
