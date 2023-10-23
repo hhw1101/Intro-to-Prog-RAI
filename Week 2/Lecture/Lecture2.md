@@ -80,14 +80,16 @@ There are four types of control
 
 ### Sequence Control
 
+
 ### Decision Control
-
-### Case Control
-
-### Loop Control
 
 ternary operator is ("?") This evaluates the condition and prints the result
 
 ![If statement example](if_conditional_example.png)
 
 ![Alternate format using ternary operator](ternary_operator_example.png)
+### Case Control
+
+Switch conditional statements execute based on value of single expression.
+This is useful when there are many different cases of a single expression.
+### Loop Control
