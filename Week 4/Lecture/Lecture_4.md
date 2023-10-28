@@ -68,4 +68,47 @@ Binary search is more efficient then the sequential search. Sequential search th
 Whereas binary the worse case will take 
 $$log_2(100)$$
 
+
+
 ## Pointers
+### Swapping variables
+~~~
+int a = 5;
+int b = 7;
+
+//without pointers
+int temp = a;
+a = b;
+b = temp;
+
+//output a = 7 and b = 5 ( temp = 5)
+
+//without third variable
+a = a + b;
+b = a - b;
+a = a - b;
+
+//output a = 7 and b = 5
+~~~
+Functions only return one value unless pinters are used.
+If you want the values from a void function, then the variables passed need to be passed as pointers rather than values.
+
+A pointer must be declared before it can be used. The asterisk tells the complier that the variable is a pointer and the type of data that the pointer is pointing to.
+~~~
+//assigning pointers
+int a = 10;
+int *ptr = &a;
+
+//if a is changed, ptr also changes
+//& is the memory location that stores this variable
+//* reads the value at the address stored in the pointer
+~~~
+Alternate format
+~~~
+int a;
+int *ptr; // declare a pointer
+
+a = 10;
+ptr = &a; 
+// if *ptr = &a then the variable 'a' is reassigned with it's address
+~~~
