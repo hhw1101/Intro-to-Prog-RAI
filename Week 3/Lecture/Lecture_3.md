@@ -22,18 +22,18 @@ To initialize the array curly brackets are used. Additionally, the size of the a
 
 ### Strings
 
-A string is a one dimensional array of characters. The string needs to be terminated by a null, which is '\0'. This appears at the end of every string which means the array size is always one character longer.
+A string is a one dimensional array of characters. The string needs to be terminated by a null, which is "\0". This appears at the end of every string which means the array size is always one character longer.
 
 > char string1[] = "hello";
 <br>
 // The code below is how the string is stored.<br>
- char string1[] = {'h','e','l','l','o','\0'};
+ char string1[] = {"h","e","l","l","o","\0"};
 
 ## Functions
 
 ### Random Numbers
 
-The **rand** function is used in c to generate a random number between 0 and 32767. The number generated isn't random can be regenerated again consistently, this only initializes a random number once.
+The **rand** function is used in c to generate a random number between 0 and 32767. The number generated isn"t random can be regenerated again consistently, this only initializes a random number once.
 
 The **rand** funciton is defined as:
 ```

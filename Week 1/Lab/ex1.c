@@ -20,7 +20,7 @@ a. What happens if you enter a real number as age input?
     The age is then printed in the display text.
 b. How to update this code to enable taking real number input?
     No update is needed, unless decimals are needed then floats will be needed for age instead.
-c. What does '\n'? From the recommended textbooks, read about the 'excape sequences'.
+c. What does "\n"? From the recommended textbooks, read about the "excape sequences".
     \n is new line
     escape sequences are when certain a specific sequence of characters produce a symbol or action ie. new line or backspace.
 */

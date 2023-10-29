@@ -14,6 +14,6 @@ int main(){
     if (age>=18 && !(strcmp(license, "yes"))){
         printf("You can drive");
     } else{
-        printf("You can't drive");
+        printf("You can"t drive");
     }
 }

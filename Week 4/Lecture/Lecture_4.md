@@ -34,7 +34,7 @@ To find size of array, use sizeof() however this returns the amount of storage n
 int size = sizeof(week)/sizeof(week[0]);
 ~~~
 
-Nested loops are slow. If multiple loops are needed then it is easier to use the same loop for each 'action'.
+Nested loops are slow. If multiple loops are needed then it is easier to use the same loop for each "action".
 
 ### Passing arrays to functions
 To pass an array into a function the array variable name and array size is specified
@@ -110,5 +110,5 @@ int *ptr; // declare a pointer
 
 a = 10;
 ptr = &a; 
-// if *ptr = &a then the variable 'a' is reassigned with it's address
+// if *ptr = &a then the variable "a" is reassigned with it"s address
 ~~~

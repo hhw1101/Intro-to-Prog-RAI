@@ -67,108 +67,108 @@ char *convert_Integer_to_String(const int Integer)
         case 1:
             String = calloc(4,sizeof(char));
 
-            String[0] = 'O';
-            String[1] = 'n';
-            String[2] = 'e';
-            String[3] = '\0';
+            String[0] = "O";
+            String[1] = "n";
+            String[2] = "e";
+            String[3] = "\0";
 
             break;
 
         case 2:
             String = calloc(4,sizeof(char));
 
-            String[0] = 'T';
-            String[1] = 'w';
-            String[2] = 'o';
-            String[3] = '\0';
+            String[0] = "T";
+            String[1] = "w";
+            String[2] = "o";
+            String[3] = "\0";
 
             break;
 
         case 3:
             String = calloc(6,sizeof(char));
 
-            String[0] = 'T';
-            String[1] = 'h';
-            String[2] = 'r';
-            String[3] = 'e';
-            String[4] = 'e';
-            String[5] = '\0';
+            String[0] = "T";
+            String[1] = "h";
+            String[2] = "r";
+            String[3] = "e";
+            String[4] = "e";
+            String[5] = "\0";
 
             break;
 
         case 4:
             String = calloc(5,sizeof(char));
 
-            String[0] = 'F';
-            String[1] = 'o';
-            String[2] = 'u';
-            String[3] = 'r';
-            String[4] = '\0';
+            String[0] = "F";
+            String[1] = "o";
+            String[2] = "u";
+            String[3] = "r";
+            String[4] = "\0";
 
             break;
 
         case 5:
             String = calloc(5,sizeof(char));
-            String[0] = 'F';
-            String[1] = 'i';
-            String[2] = 'v';
-            String[3] = 'e';
-            String[4] = '\0';
+            String[0] = "F";
+            String[1] = "i";
+            String[2] = "v";
+            String[3] = "e";
+            String[4] = "\0";
 
             break;
 
         case 6: 
             String = calloc(4,sizeof(char));
 
-            String[0] = 'S';
-            String[1] = 'i';
-            String[2] = 'x';
-            String[3] = '\0';
+            String[0] = "S";
+            String[1] = "i";
+            String[2] = "x";
+            String[3] = "\0";
 
             break;
 
         case 7:
             String = calloc(6,sizeof(char));
 
-            String[0] = 'S';
-            String[1] = 'e';
-            String[2] = 'v';
-            String[3] = 'e';
-            String[4] = 'n';
-            String[5] = '\0';
+            String[0] = "S";
+            String[1] = "e";
+            String[2] = "v";
+            String[3] = "e";
+            String[4] = "n";
+            String[5] = "\0";
 
             break;
 
         case 8:
             String = calloc(6,sizeof(char));
 
-            String[0] = 'E';
-            String[1] = 'i';
-            String[2] = 'g';
-            String[3] = 'h';
-            String[4] = 't';
-            String[5] = '\0';
+            String[0] = "E";
+            String[1] = "i";
+            String[2] = "g";
+            String[3] = "h";
+            String[4] = "t";
+            String[5] = "\0";
 
             break;
 
         case 9:
             String = calloc(5,sizeof(char));
 
-            String[0] = 'N';
-            String[1] = 'i';
-            String[2] = 'n';
-            String[3] = 'e';
-            String[4] = '\0';
+            String[0] = "N";
+            String[1] = "i";
+            String[2] = "n";
+            String[3] = "e";
+            String[4] = "\0";
 
             break;
 
         case 10:
             String = calloc(4,sizeof(char));
 
-            String[0] = 'T';
-            String[1] = 'e';
-            String[2] = 'n';
-            String[3] = '\0';
+            String[0] = "T";
+            String[1] = "e";
+            String[2] = "n";
+            String[3] = "\0";
 
             break;
     }

@@ -2,7 +2,7 @@
 
 int main(){
     int num = 3;
-    char c = 'c';
+    char c = "c";
     float f = 234.2555;
     char string[] = "Hello World!";
 

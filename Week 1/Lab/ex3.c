@@ -13,7 +13,7 @@ int main(){
     // Prints the character entered
 
     // printf("Enter you grade: ");
-    // getch_grade = getch(); // Gives a ASCII value so doesn't work with char
+    // getch_grade = getch(); // Gives a ASCII value so doesn"t work with char
 
     // printf("Your grade is: %c", getch_grade);
     // Prints the ASCII value of the entered grade

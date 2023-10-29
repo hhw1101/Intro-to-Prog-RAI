@@ -1,5 +1,5 @@
 #include <stdio.h>
-// This is Daniel's solution
+// This is Daniel"s solution
 unsigned int find_summation(const unsigned int number);
 
 int main(void)

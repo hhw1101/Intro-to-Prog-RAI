@@ -9,16 +9,16 @@ int main(){
     char grade;
 
     // taking inputs
-    puts("Enter Student's name:");
+    puts("Enter Student"s name:");
     gets(name);
 
-    puts("Enter Student's age:");
+    puts("Enter Student"s age:");
     scanf("%i", &age);
 
-    puts("Enter Student's GPA:");
+    puts("Enter Student"s GPA:");
     scanf("%f",&GPA);
 
-    puts("Enter Student's grade:");
+    puts("Enter Student"s grade:");
     grade = getche();
 
     printf("\n%s is %i. %s currently has a GPA of %.2f and a grade of %c", name, age, name, GPA, grade );

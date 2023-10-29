@@ -40,7 +40,7 @@ int main()
     // printing the input value
     // printf("Hello %s, your favourite color is %s", name, color);
     
-    // puts doesn't allow for formatting.
+    // puts doesn"t allow for formatting.
     char string[50];
     // sprintf is needed to combine the string of the text and variables into one long character array
     sprintf(string, "Hello %s, your favourite color is %s", name, color);

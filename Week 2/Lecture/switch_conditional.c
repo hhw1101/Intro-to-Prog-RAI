@@ -6,19 +6,19 @@ int main(){
     scanf("%c", &c);
     switch(c)
     {
-        case 'A':
+        case "A":
             printf("90-100");
             break;
-        case 'B':
+        case "B":
             printf("80-89");
             break;
-        case 'C':
+        case "C":
             printf("70-79");
             break;
-        case 'D':
+        case "D":
             printf("60-69");
             break;
-        case 'F':
+        case "F":
             printf("0-59");
             break;
         default:
