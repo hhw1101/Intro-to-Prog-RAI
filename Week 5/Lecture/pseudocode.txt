@@ -1,0 +1,29 @@
+
+Pseudocode Q1
+
+Take mark as input
+if mark > 100
+    error
+else
+    if mark >= 50
+        display pass
+    else
+        display fail
+    end if
+end if
+
+Pseudocode Q2
+Take numbers x, y, z
+If x>y then
+    if x>z tehn
+        display x
+    else
+        display z
+    end if
+else
+    if y>z then
+        display y
+    else
+        display z
+    end if
+
