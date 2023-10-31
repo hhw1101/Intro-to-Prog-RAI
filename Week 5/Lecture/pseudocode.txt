@@ -2,28 +2,56 @@
 Pseudocode Q1
 
 Take mark as input
-if mark > 100
+If mark > 100
     error
-else
-    if mark >= 50
-        display pass
-    else
-        display fail
-    end if
-end if
+Else
+    If mark >= 50
+        Display pass
+    Else
+        Display fail
+    End If
+End If
 
 Pseudocode Q2
+
 Take numbers x, y, z
-If x>y then
-    if x>z tehn
-        display x
-    else
-        display z
-    end if
-else
-    if y>z then
-        display y
-    else
-        display z
-    end if
+If x>y Then
+    If x>z tehn
+        Display x
+    Else
+        Display z
+    End If
+Else
+    If y>z Then
+        Display y
+    Else
+        Display z
+    End if
+End if
+
+Pseudocode Q3
+T = 0
+Input n
+While n != 0
+    T = T +n;
+    Input n
+End While
+Display T
+
+Pseudocode Assessment Q1
+
+Input base, exponent
+Result = 1
+Flag = False
+If exponent < 0 Then
+    Flag = True
+    exponent = -exponent
+End If
+For 1 to exponent
+    T = T * base
+End For
+If Flag = True Then
+    Result = 1/Result
+End If
+Display Result
 
