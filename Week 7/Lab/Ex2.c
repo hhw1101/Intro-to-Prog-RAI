@@ -15,4 +15,5 @@ int main(){
     }
     //The -1 is needed as there are 9 other elements asside from the first element that the pointer currently points to.
     //Therefore the -1 is needed to print the proper array.
+    return 0;
 }

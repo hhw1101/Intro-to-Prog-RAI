@@ -85,4 +85,6 @@ int main()
 
     // This should now work for any dimension square matrix.
     // Done after seeing example in labs
+    return 0;
 }
+//Extension to do this without the second 2D array
