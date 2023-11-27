@@ -1,4 +1,4 @@
-# Dynamic Memory Allocation
+# Dynamic Memory Allocation and Sorting
 
 ## Pointers and arrays
 Accessing arrays using pointers
@@ -67,9 +67,111 @@ Baeldung.com
 
 Pointers play an important role in DMA. Allocated memory can only be accessed via pointers. 
 
-There are 4 functions that is used for DMA in the \<stdlib.h\>:
+There are 4 functions that is used for DMA in the \<stdlib.h\> library:
 1.  malloc()
 2.  calloc()
 3.  realloc()
 4.  free()
 
+### malloc()
+Memory Allocation
+This allocates a single large block of continuous memory.
+Syntax:
+~~~
+(void*)malloc(size_t)    // size_t - unsigned int
+// size_t is the number of bytes needed/memory locations, this depends on the length of the data type, typecasted.
+~~~
+This function returns a pointer to the first byte of the allocated memory if successful, otherwise NULL.
+
+Use case: often when required memory size is unknown till runtime.
+
+The pointer needs to be typecasted after being called as only memory is allocated and not the data type.
+
+Examples:
+~~~
+//Allocating float type memory
+ptr = (float *)malloc(40);      // allocates 10 float type slots.
+//Allocating double type memory
+ptr = (double *)malloc(80);     // allocates 10 double type slots.
+//Allocating long type memory
+ptr = (long *)malloc(40);       // allocates 5 long type slots.
+//Allocating char type memory
+ptr = (char *)malloc(10);       // allocates 10 char type slots.
+~~~
+
+### calloc()
+Clear Allocation
+
+This allocates a specified number of blocks of memory, each of a specific size.
+
+Syntax:
+~~~
+(void *) calloc(size_t num_elements, size_t element_size)
+~~~
+
+calloc() returns a pointer to the first bute of the allocated memory if successfule otherwise it is NULL.
+
+This differs from malloc() by taking 2 parameters instead of one. There there is no need to calculate the size of malloc(). And instead of having random values in the array all the data is set to 0 until changed.
+
+![calloc vs malloc](table.png)
+
+The main issue with malloc and calloc is, when used recursively using the same pointer type variable then the old infomation is lost.
+
+~~~
+int *ptr;
+ptr = (int *)malloc(44); // 11 elements memory
+ptr[0] = 3; ip[6] = 6; 
+ptr = (int *)malloc(52);// 13 elements memory
+ptr = (int *)realloc(ptr,52);// correct syntax
+~~~
+
+### realloc()
+Reallocation
+
+Changes the size of the memory block a solution the the above issue. The function returns a pointer to the resized memory block. If the reallocation fails then NULL is returned and the original block remains the same.
+
+Syntax:
+~~~
+(void *) realloc(void *ptr, size_t new_size)
+~~~
+
+Moves the contents of the old block to a new block
+
+ * Increase or decrease the size of the block.
+ * If the new size is larger, the content of the old block is preserved up to the original size.
+ * If the new size is smaller, the excess data is truncated. 
+
+Newly allocated bytes are uninitialized and contains garbage values.
+
+### free()
+free() releases the dynamically allocated memory in the heap (forgetting the memory in the code).
+
+<font  size="3">**Importance**</font>
+Memory needs to be deallocated to prevent memory leaks.
+
+Syntax:
+~~~
+(void *) free(void *ptr) // This takes a pointer and deallocated the memory from the pointer.
+~~~
+
+### Memory Leaks
+
+Memory leaks occur when dynamically allocated memory is not release before program termination.
+This leads to *inefficient memory usage*, *reduced performance*. In extreme cases the *program crashes* due to lack of memory availability.
+
+Once the pointer is deallocated it is best practise to assign the pointer to NULL rather than leave the pointer as a "floating" pointer.
+
+## Sorting
+
+Sorting and searching is one of the most common parts of any programming system
+There are many common sorts:
+ * Bubble sort
+ * Quick sort
+ * Insertion sort
+ * Selection sort
+ * Merge sort
+
+### Bubble Sort
+
+A bubble sort compares two elements that are next to one another, they switch positions if the number on the left is larger than the one on the right (if sorting to find ascending order)
+This can be done with strings in C using *strcmp*. Using the returned value then you can switch accordingly.
