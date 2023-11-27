@@ -1,4 +1,10 @@
-// Carried over from Lecture 6
+/* Carried over from Lecture 6
+
+Layer 0     Layer 1
+1   2       5   6
+3   4       7   8
+
+*/
 
 #include <stdio.h>
 
