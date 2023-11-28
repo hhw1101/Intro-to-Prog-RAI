@@ -3,7 +3,7 @@
 
 int main(){
     FILE *fp;
-    fp = fopen("C://ex7.txt", "r");
+    fp = fopen("C:/Users/jenni/Desktop/Coding/UCL/Programming for RAI/Week 8/Lecture/ex7.txt", "r");
     char c; 
     while(!feof(fp)){
         c = getc(fp);

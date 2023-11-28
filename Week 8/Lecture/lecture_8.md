@@ -77,3 +77,8 @@ Using Direct access
 * ftell
 * rewind
 
+
+NOTE: use of getcwd() could be useful instead of typeing full path.
+
+## Direct Access
+![Access functions](directaccesstable.png)
