@@ -1,0 +1,4 @@
+Book: C Programming Absolute Beginners's Guide
+Author: Greg Perry
+Book: Head First C: A Brain-Friendly Guide
+Author: David Griffiths

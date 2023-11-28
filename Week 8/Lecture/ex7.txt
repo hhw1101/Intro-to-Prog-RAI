@@ -1,0 +1,1 @@
+Writing sting to a txt fileWriting a string to a txt file
