@@ -66,22 +66,86 @@ void print_char_table(){
     addch(ACS_NEQUAL);addch('\t');printw("ACS_NEQUAL\t"); 
     addch(ACS_STERLING);addch('\t');printw("ACS_STERLING\t"); 
 } 
+  
+void colouring() 
+{ 
+    if(has_colors()) 
+    { 
+        if(start_color() == OK) 
+        { 
+            init_pair(1, COLOR_YELLOW, COLOR_RED); 
+            init_pair(2, COLOR_MAGENTA, COLOR_CYAN); 
+            init_pair(3, COLOR_GREEN, COLOR_BLACK); 
+ 
+            attrset(COLOR_PAIR(1)); 
+            addstr("Yellow and red\n\n"); 
+            attroff(COLOR_PAIR(1)); 
+ 
+            attrset(COLOR_PAIR(2)); 
+            addstr("Magenta and cyan\n\n"); 
+            attroff(COLOR_PAIR(2)); 
+ 
+            attrset(COLOR_PAIR(3)); 
+            addstr("Green and black\n\n"); 
+            attroff(COLOR_PAIR(3)); 
+            refresh(); 
+        } 
+        else 
+        { 
+ 
+            addstr("Cannot start colours\n"); 
+            refresh(); 
+        } 
+    } 
+    else 
+    { 
+        addstr("Not colour capable\n"); 
+        refresh(); 
+    } 
+}
 
 int main(){
     //Initialize Ncurses
     initscr();
 
-    //Print text and refresh
-    printw("Hello, NCurses!");
-    addstr("\n------Ncurses tutorial----------\n"); 
-    addstr("Use of addch function for printing character: "); 
-    addch('a'); 
-    printw("\nUse of printw for printing numbers: %d, %f\n", 11,11.5 );
-    refresh();
+    // //Print text and refresh
+    // printw("Hello, NCurses!");
+    // addstr("\n------Ncurses tutorial----------\n"); 
+    // addstr("Use of addch function for printing character: "); 
+    // addch('a'); 
+    // printw("\nUse of printw for printing numbers: %d, %f\n", 11,11.5 );
+    // refresh();
 
-    // moving_and_sleeping();
-    print_char_table();
-    getch();
+    // // moving_and_sleeping();
+    // // print_char_table();
+    // colouring();
+    // getch();
+
+
+    int ch; 
+    raw(); 
+    keypad(stdscr, TRUE); 
+    noecho(); 
+ 
+    printw("Type any character to see it in bold\n"); 
+    while (1) 
+    { 
+        ch = getch(); 
+ 
+        if (ch == KEY_LEFT) 
+            printw("Left arrow is pressed\n"); 
+        else if (ch == KEY_RIGHT) 
+            printw("Right arrow is pressed\n"); 
+        else if (ch == KEY_UP) 
+            printw("Up arrow is pressed\n"); 
+        else if (ch == KEY_DOWN) 
+            printw("Down arrow is pressed\n"); 
+        // if ESC is pressed, end the program 
+        else if (ch == 27) 
+            break; 
+ 
+        // refresh(); 
+    }
     endwin();
     return 0;
     
