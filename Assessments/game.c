@@ -1,3 +1,8 @@
+/*Utilised a mix of Windows and Linux, however towards the end used Linux
+I want apologise for the lack of criteria met
+I was overwhelmed with work in the past week.
+*/
+
 #include <ncurses.h>
 #include <unistd.h>
 #include <time.h>
@@ -139,9 +144,10 @@ void information(int lvl, int score, int lives)
     mvprintw(HEIGHT + 1, 5, "Level: %d", lvl);
     mvprintw(HEIGHT + 1, 25, "Score: %d", score);
     mvprintw(HEIGHT + 1, 45, "Lives: %d", lives);
-    mvprintw(HEIGHT + 1, WIDTH - 25, "Press q to quit");
+    mvprintw(HEIGHT + 1, WIDTH - 5, "Press q to quit");
 }
 
+// Logic should work however does not work
 int collisionScore(int x, int y, int *board, int score)
 {
     if (*((board + y * WIDTH) + x) == ACS_DIAMOND)
@@ -483,10 +489,11 @@ int main()
     start_color();
     init_pair(1, COLOR_RED, COLOR_BLACK);
     init_pair(2, COLOR_GREEN, COLOR_BLACK);
-    // char *options[5] = {"Welcome to find the Diamonds", "Start Game", "View Leaderboard", "How to Play", "Press q to quit"};
+    
     int menu_press = 0;
     int optiony = 5;
     int selected;
+
     // Opening Menu
     while (menu_press != 10)
     {
@@ -520,7 +527,7 @@ int main()
         refresh();
     }
     clear();
-
+    //Options
     if (selected == 4)
     {
         endwin();
