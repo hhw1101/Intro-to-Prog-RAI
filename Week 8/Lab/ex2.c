@@ -1,4 +1,5 @@
-#include <ncurses/ncurses.h>
+#include <ncurses.h> // Linux and Mac
+//#include <ncurses/ncurses.h> // Windows
 #include <stdlib.h>
 #include <time.h>
 
@@ -11,8 +12,11 @@ int main()
     int y = rand() % (HEIGHT - 1) + 1;
     char move;
     char character = 'R';
+    char *cptr = &character;
     initscr();
-
+    raw();
+    keypad(stdscr, TRUE);
+    noecho();
     for (int i = 0; i < HEIGHT; i++)
     {
         for (size_t j = 0; j < WIDTH; j++)
@@ -89,7 +93,7 @@ int main()
         {
             break;
         }
-        mvprintw(y, x, &character);
+        // mvprintw(y, x, cptr);
         refresh();
     }
     // refresh();
