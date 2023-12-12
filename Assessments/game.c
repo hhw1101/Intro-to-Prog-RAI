@@ -1,9 +1,10 @@
-#include <ncurses.h>
+#include <ncurses/ncurses.h>
 #include <unistd.h>
 #include <time.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <windows.h>
 
 /* Windows*/
 //  #include <ncurses/ncurses.h>
