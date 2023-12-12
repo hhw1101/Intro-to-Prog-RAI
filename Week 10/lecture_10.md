@@ -1,20 +1,21 @@
 # Robotics Programming and Applications Overview
 
 Dr Narsimlu Kemsaram
-Multi-Robot systems
 
-[Table of Contents]
-1. Introduction to Robotics
-2. ROS - 
-3. Robotics in Action
-4. Programming applications 
-5. 
+Multi-Robot systems
+## Table of Contents
+1. [Introduction to Robotics](#introduciton-to-robotics)
+2. [Robotics in Action](#robotics-in-action)
+3. Introduction to Arduino
+4. Robotics Programming with Mona Robot
+5. Simple Concurrent Programming: Robot Sensing and Control
+   
 
 ## Introduciton to Robotics
 ### What is a robot??
 A goal-oriented machine that can sense, plan, and act autonomously.
 
-## Sensors and algorithms
+### Sensors and algorithms
 sensors: camera Lidar etc
 camer - limited vision
 lidar more suround vision
@@ -27,11 +28,11 @@ compnonets for robotics:
  * platform
  * language
  * simulator
-## Framework
-## ROS - Robot Operating System
+### Framework
+#### ROS - Robot Operating System
+![ROS](ros.png)
 collection of tools, libraries and documentations
-ros is more a frameworkd or middleware plus a developer community
-ros = plumbing + tools + capabilities + community
+ros is more a framework or middleware plus a developer community
 
 2007 - Stanford AI lab (ROS1)
 2013 -  managed by Open-Source Robotics Foundation (OSRF)
@@ -42,10 +43,10 @@ not backwards compatiable
 ROS 2 distribution
 different distributions used for various programs, need to consider distribution used when utliising ros
 
-## Platform for Robotics
+### Platform for Robotics
 Most developers/embedded developers use ubuntu as it can be run on many processors.
 
-## Language 
+### Language 
 robotics requre a versatile, efficient and easy to use language:
 
 c++ - compiler
@@ -59,18 +60,36 @@ matlab
 >supporst ros network bit is mostly used for computation and is best used by researchers
 
 are the most popular prog languages used in robotics
-## Simulations
+### Simulations
 Gazebo and webots
+
 You can visualise how the robots move and interact with other robots.
 
 ## Robotics in Action
-* Autonomous Ground Vehicles (AGVs)
-* Unmanned Arial Vehicles (UAVs)
+* [Autonomous Ground Vehicles (AGVs)](#agvs)
+* [Unmanned Arial Vehicles (UAVs)](#uavs)
 * Mars Exploration rovers (MERs)
-* Robotics in Medical
+* [Robotics in Medical](#medical-applications)
 
 ### AGVs
 Utilise a mix of cameras and lidar to map the position of other vehicles. Aslo using the software to follow the car infront without veering.
 
 Paper - A stereo perception framework for autonomous vehicles - 2020 iee vehicular tech conference
+
+### UAVs
+Paper - An onboard perception framework for Multi-UAV Systems
+
+detection of other drones in proximity using camera
+
+### swarm robots 
+acoustic self actuate multimodal bots for tangible tabletop interactions.
+allows for non - physical interactions
+
+### Medical Applications
+
+
+## Intro to Arduiono
+github monarobot
+
+Monda robot is easily adaptable and has a low learning curve
 
